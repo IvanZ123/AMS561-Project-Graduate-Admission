@@ -1,14 +1,87 @@
-\documentclass{article}
-\usepackage[utf8]{inputenc}
+\documentclass[12pt]{article}
+\usepackage[a4paper]{geometry}
+\usepackage[myheadings]{fullpage}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{graphicx, wrapfig, subcaption, setspace, booktabs}
+\usepackage{amsfonts,dcolumn}
+\usepackage[T1]{fontenc}
+\usepackage[font=small, labelfont=bf]{caption}
+\usepackage{fourier}
+\usepackage[protrusion=true, expansion=true]{microtype}
+\usepackage[english]{babel}
+\usepackage{sectsty}
+\usepackage{url, lipsum}
+\usepackage{listings}
+\usepackage{float}
 
-\title{AMS561 Project Report}
-\author{398395614 }
-\date{May 2019}
+\lstdefinestyle{customc}{
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+  frame=L,
+  xleftmargin=\parindent,
+  language=C,
+  showstringspaces=false,
+  basicstyle=\footnotesize\ttfamily,
+  keywordstyle=\bfseries\color{green!40!black},
+  commentstyle=\itshape\color{purple!40!black},
+  identifierstyle=\color{blue},
+  stringstyle=\color{orange},
+}
+
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+\onehalfspacing
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+
+%-------------------------------------------------------------------------------
+% HEADER & FOOTER
+%-------------------------------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\setlength\headheight{15pt}
+\fancyhead[L]{Introduction to Computational and Data Science}
+\fancyhead[R]{Stony Brook University}
+\fancyfoot[R]{Page \thepage\ of \pageref{LastPage}}
+%-------------------------------------------------------------------------------
+% TITLE PAGE
+%-------------------------------------------------------------------------------
 
 \begin{document}
+\begin{sloppypar}
+\title{ \LARGE \textsc{AMS561 Final Project}
+		\\ [2.0cm]
+		\HRule{0.5pt} \\
+		\LARGE \textbf{\uppercase{Graduate Admission Analysis}}
+		\HRule{2pt} \\ [0.5cm]
+		\normalsize \today \vspace*{5\baselineskip}}
+
+\date{}
+
+
+\author{\begin{tabular}{rl}
+  \textbf{Name:} &Yifan Zhai\\
+  \textbf{SBID:}  &112360276\\
+  \textbf{Department:} & Technolog \& Society\\
+  \textbf{Professor:} & Robert Harrison
+\end{tabular}}
 
 \maketitle
+\thispagestyle{empty}
+\newpage
+\setcounter{page}{1}
+\tableofcontents
+\newpage
 
 \section{Introduction}
 
+The software in a Python notebook (or set of files), and associated data
+A PDF written document ~5 pages describing
+~1-page: the project objectives incl. summary of contributions of each team member
+~2-pages: techniques and tools
+~2-pages: results conclusions
+Graphics and references in addition
+
+\end{sloppypar}
 \end{document}
